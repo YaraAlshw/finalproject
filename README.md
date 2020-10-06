@@ -1,4 +1,4 @@
-# Phylogeography and Evolutionary History of the Wood Frog (Rana sylvatica)
+# Phylogeography and Evolutionary History of the Wood Frog (*Rana sylvatica*)
 
 ## Introduction and Goals
 
