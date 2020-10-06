@@ -1,34 +1,16 @@
-# Phylogenetic Biology - Final Project
-
-## Guidelines - you can delete this section before submission
-
-This repository is a stub for your final project. Fork it, develop your project, and submit it as a pull request. Edit/ delete the text in this readme as needed.
-
-Some guidelines and tips:
-
-- Use the stubs below to write up your final project. Alternatively, if you would like the writeup to be an executable document (with [knitr](http://yihui.name/knitr/), [jupytr](http://jupyter.org/), or other tools), you can create it as a separate file and put a link to it here in the readme.
-
-- For information on formatting text files with markdown, see https://guides.github.com/features/mastering-markdown/ . You can use markdown to include images in this document by linking to files in the repository, eg `![GitHub Logo](/images/logo.png)`.
-
-- The project must be entirely reproducible. In addition to the results, the repository must include all the data (or links to data) and code needed to reproduce the results.
-
-- If you are working with unpublished data that you would prefer not to publicly share at this time, please contact me to discuss options. In most cases, the data can be anonymized in a way that putting them in a public repo does not compromise your other goals.
-
-- Paste references (including urls) into the reference section, and cite them with the general format (Smith at al. 2003).
-
-- Commit and push often as you work.
-
-OK, here we go.
-
-# Title of my project
+# Phylogeography and Evolutionary History of the Wood Frog (Rana sylvatica)
 
 ## Introduction and Goals
 
-The goal of my project is to answer the question, What is...?
+The wood frog (*Rana sylvatica*) is largely distributed all over North America, with northern limits in Alaska, and southern limits in Georgia and Alabama, and is the only frog species to have populations beyond the arctic circle (Martof & Humphries 1959). Wood frogs have an interesting post-glacial recolonization history: previous work using two mitochondrial genes determined that wood frogs comprise two distinct lineages: an eastern and western clade, and a maritime eastern subclade (Lee-Yaw et al. 2008). These two clades of wood frogs expanded their range northward and occupied colder environments. 
 
-The methods I will use to do this are...
+The goal of my project is reconstruct the evolutionary history of wood frogs through analyzing ddRADSeq data and using a phylogeographic approach. I will be collecting DNA from museum specimens and from new samples during collecting trips. I aim to explore how the two lineages of wood frogs diverged, how genetically isolated they are now, identify possible contact zones, and investigate whether the two lineages adapted to colder environment in similar (parallel) ways.
+My project builds open previous findings by Lee-Yaw et al, 2008 and aims to fill several gaps in our understanding of the full recolonization history. Mainly, many populations and sites were not represented in the 2008 study, and we still lack knowledge of possible contact zones between wood frog populations. For example, a particular area of interest is the northern boundary between the eastern and western clades, which was not resolved in the study. 
+Because I do not yet have ddRADseq data for wood frogs, I will be basing my project on a  published study that generated ddRADseq data for the Eurasian spadefoot toads (*Pelobates spp.*) (Dufresnes et al. 2019). This data is publicly available on NCBI as raw individual RAD sequences under BioProject PRJNA542138 with accessions SAMN11612144–SAMN11612336.
 
-The data I will use are (my own data/ data publicly available at YYY/ simulations)
+I will replicate the analyses the authors performed, starting with processing the raw sequence data and calling SNPs to generate sequence alignments and SNP matrices for downstream analyses. Similarly to the authors, I will perform Bayesian phylogenetics reconstructions of the SNP dataset, and perform PCA to visualize the genetic structure among the populations of spadefoots. I will use the Bayesian clustering algorithm of the program STRUCTRE to infer population differentiation. Finally, I will analyze the contact zones between three pairs of taxa by exploring the genetic admixture between them.
+
+This project will enable me to develop an analysis pipeline to use for the future ddRADseq data that I will be generating from wood frog samples.
 
 ## Methods
 
@@ -47,4 +29,11 @@ The biggest difficulty in implementing these analyses was...
 If I did these analyses again, I would...
 
 ## References
+
+Dufresnes C, Strachinis I, Suriadna N, Mykytynets G, Cogălniceanu D, et al. 2019. Phylogeography of a cryptic speciation continuum in Eurasian spadefoot toads ( Pelobates ). Mol Ecol. 28(13):3257–70. https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15133
+
+Lee-Yaw JA, Irwin JT, Green DM. 2008. Postglacial range expansion from northern refugia by the wood frog, Rana sylvatica. Mol. Ecol. 17(3):867–84. https://pubmed.ncbi.nlm.nih.gov/18179428/
+
+Martof BS, Humphries RL. 1959. Geographic Variation in the Wood Frog Rana sylvatica. American Midland Naturalist. 61(2):350. https://www.jstor.org/stable/pdf/2422506.pdf
+
 
