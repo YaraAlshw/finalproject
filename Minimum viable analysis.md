@@ -1,7 +1,7 @@
-#Minimum viable analysis 
+# Minimum viable analysis 
 Methods closely follow Dufresnes et al. 2019
 
-##Data aquision and processing
+## Data aquision and processing
 
 1. I will download the data from NCBI. Unfortunately, my attemps at downloading the 192 raw individual reads all at once and directly onto the cluster have been unsuccessful. 
 I downlaoded one read to use as an example for my minimum viable analysis plan. The reads are in fasta.gz format, which can be decompressed using the command *gzip -d*
@@ -20,7 +20,7 @@ Where ./raw_reads is the directory containing the fasta.gz reads
 4. I will call the SNPs using minor allele frequency of 0.05 and maximum observed heterozygosity of 0.75
   
 
-##Phylogenetic analysis
+## Phylogenetic analysis
 
 1. I will use **BEAST** to perform this analsis. I will use a lognormal relaxed molecular clock, with a normally distributed prior and a birth–death tree model. I will use the GTR + G substitution model.
 I will run the chains for 100 million iterations, and sample one tree every 50,000
@@ -30,6 +30,6 @@ I will run the chains for 100 million iterations, and sample one tree every 50,0
 3. As a measure of divergence between the main clades, I will compute pairwise nucleotide distances
 
 
-##Extra – Population tructure
+## Extra – Population tructure
 
 1. If time allows, I would like to visualize the genetic structure of spadefoot toads. To do this, I will perform PCA using the packages **ade4** and **adegenet** on R
