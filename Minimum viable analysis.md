@@ -4,6 +4,7 @@ Methods closely follow Dufresnes et al. 2019
 ## Data aquision and processing
 
 Note: the two restriction enzymes used were SbfI and MseI (Brelsford et al. 2016)
+Note: I'm looking into using ipyrad instead of STRUCTURE. Currently working on installing it onto the cluster
 
 1. I will download the data from NCBI. Unfortunately, my attemps at downloading the 192 raw individual reads all at once and directly onto the cluster have been unsuccessful. 
 I downlaoded one read to use as an example for my minimum viable analysis plan. The reads are in fasta.gz format, which can be decompressed using the command *gzip -d*
