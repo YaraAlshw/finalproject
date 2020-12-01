@@ -2,3 +2,4 @@ sra_data.fastq.gz
 *.sh
 *.fastq
 *.out
+*/*
