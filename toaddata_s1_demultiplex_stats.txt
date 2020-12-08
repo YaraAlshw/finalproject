@@ -1,0 +1,14 @@
+              reads_raw
+sra_data-01     4066796
+sra_data-010    5236252
+sra_data-011    5280780
+sra_data-012    6536030
+sra_data-013    4805465
+sra_data-02     5484998
+sra_data-03     5561766
+sra_data-04     4623094
+sra_data-05     5783028
+sra_data-06     5694065
+sra_data-07     4332793
+sra_data-08     4359511
+sra_data-09     4600562
