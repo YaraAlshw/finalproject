@@ -1,0 +1,106 @@
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].stats_dfs.s7_filters
+
+                           total_filters applied_order retained_loci
+total_prefiltered_loci                 0             0        134161
+filtered_by_rm_duplicates           2724          2724        131437
+filtered_by_max_indels              2085          2085        129352
+filtered_by_max_SNPs                 988           941        128411
+filtered_by_max_shared_het           457           437        127974
+filtered_by_min_sample             69759         69759         58215
+total_filtered_loci                76013         75946         58215
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+              sample_coverage
+sra_data-01             27897
+sra_data-010            29667
+sra_data-011            30253
+sra_data-012            32704
+sra_data-013              299
+sra_data-02             31171
+sra_data-03             29747
+sra_data-04             30063
+sra_data-05             31371
+sra_data-06             32880
+sra_data-07             31913
+sra_data-08             31505
+sra_data-09             32098
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+    locus_coverage  sum_coverage
+1                0             0
+2                0             0
+3                0             0
+4            24365         24365
+5             4130         28495
+6             7132         35627
+7             3349         38976
+8             7084         46060
+9             1940         48000
+10            3913         51913
+11            1786         53699
+12            4393         58092
+13             123         58215
+
+
+The distribution of SNPs (var and pis) per locus.
+## var = Number of loci with n variable sites (pis + autapomorphies)
+## pis = Number of loci with n parsimony informative site (minor allele in >1 sample)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+## The "reference" sample is included if present unless 'exclude_reference=True'
+
+     var  sum_var   pis  sum_pis
+0   4877        0  7947        0
+1   6511     6511  8524     8524
+2   6701    19913  7671    23866
+3   6155    38378  6717    44017
+4   5518    60450  5640    66577
+5   5177    86335  4950    91327
+6   4660   114295  4175   116377
+7   4068   142771  3375   140002
+8   3375   169771  2620   160962
+9   2719   194242  1928   178314
+10  2172   215962  1500   193314
+11  1790   235652  1178   206272
+12  1463   253208   877   216796
+13  1156   268236   569   224193
+14   797   279394   280   228113
+15   555   287719   158   230483
+16   419   294423    90   231923
+17    91   295970    13   232144
+18     6   296078     1   232162
+19     1   296097     1   232181
+20     1   296117     0   232181
+21     0   296117     0   232181
+22     1   296139     1   232203
+23     1   296162     0   232203
+24     1   296186     0   232203
+
+
+## Final Sample stats summary
+              state  reads_raw  reads_passed_filter  clusters_total  clusters_hidepth  hetero_est  error_est  reads_consens  loci_in_assembly
+sra_data-01       7    4066796              4059514          228969             55694    0.018700   0.006639          47599             27897
+sra_data-010      7    5236252              5225733          721152             62742    0.024331   0.006817          51431             29667
+sra_data-011      7    5280780              5271260          390359             63677    0.020508   0.005903          53988             30253
+sra_data-012      7    6536030              6493560          355034             62712    0.020699   0.010216          51308             32704
+sra_data-013      7    4805465              4796733          274640             31812    0.038466   0.004399          26938               299
+sra_data-02       7    5484998              5477927          264757             64770    0.020001   0.006124          54913             31171
+sra_data-03       7    5561766              5554969          305360             58226    0.019298   0.005306          49854             29747
+sra_data-04       7    4623094              4595871          459482             60008    0.034197   0.010999          45325             30063
+sra_data-05       7    5783028              5774975          362506             64193    0.020954   0.006027          54585             31371
+sra_data-06       7    5694065              5666244          324899             63160    0.021555   0.009258          52079             32880
+sra_data-07       7    4332793              4319740          209181             56784    0.018869   0.008277          48300             31913
+sra_data-08       7    4359511              4355212          207286             56710    0.021332   0.006203          48620             31505
+sra_data-09       7    4600562              4596554          295085             59289    0.021226   0.005403          50725             32098
+
+
+## Alignment matrix statistics:
+snps matrix size: (13, 296186), 45.44% missing sites.
+sequence matrix size: (13, 4907506), 51.28% missing sites.

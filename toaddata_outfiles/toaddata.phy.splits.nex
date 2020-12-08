@@ -1,0 +1,53 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=13;
+TAXLABELS
+[1] 'sra_data-01'
+[2] 'sra_data-010'
+[3] 'sra_data-011'
+[4] 'sra_data-012'
+[5] 'sra_data-013'
+[6] 'sra_data-02'
+[7] 'sra_data-03'
+[8] 'sra_data-04'
+[9] 'sra_data-05'
+[10] 'sra_data-06'
+[11] 'sra_data-07'
+[12] 'sra_data-08'
+[13] 'sra_data-09'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=13 nsplits=25;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 2 3,
+	100	 4,
+	100	 11,
+	100	 4 11,
+	100	 8,
+	100	 10,
+	100	 8 10,
+	100	 4 8 10 11,
+	100	 6,
+	100	 9,
+	100	 6 9,
+	100	 12,
+	100	 13,
+	100	 12 13,
+	100	 6 9 12 13,
+	81	 1 2 3 5 7,
+	100	 5,
+	100	 1 2 3 7,
+	100	 1 7,
+	100	 7,
+	100	 1,
+	8	 4 5 8 10 11,
+	12	 5 6 9 12 13,
+;
+END; [Splits]
+
