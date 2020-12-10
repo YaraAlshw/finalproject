@@ -1,4 +1,4 @@
-# Phylogeography and Evolutionary History of the Wood Frog (*Rana sylvatica*)
+# Phylogeography of the Eurasian Spadefoot toad (*Pelobates spp.*)
 
 ## Introduction and Goals
 
@@ -8,9 +8,11 @@ The goal of my project is reconstruct the evolutionary history of wood frogs thr
 
 My project builds open previous findings by Lee-Yaw et al, 2008 and aims to fill several gaps in our understanding of the full recolonization history. Mainly, many populations and sites were not represented in the 2008 study, and we still lack knowledge of possible contact zones between wood frog populations. For example, a particular area of interest is the northern boundary between the eastern and western clades, which was not resolved in the study. 
 
-Because I do not yet have ddRADseq data for wood frogs, I will be basing my project on a  published study that investigated the phylogeography of a cryptic speciation continuum using the Eurasian spadefoot toads (*Pelobates spp.*). In the study, the authors generated a ddRADseq data that is publicly available on NCBI. (Dufresnes et al. 2019). I will replicate a part of the analyses that the authors performed, which involve processing the raw sequence data, and then performing phylogenetic analyses and constructing trees. The goal of my project is to investigate the phylogenetic relationship between several species within the *Pelobates* genus
+Because I do not yet have ddRADseq data for wood frogs, I will be modeling my project on a published study that investigated the phylogeography of a cryptic speciation continuum using the Eurasian spadefoot toads (*Pelobates spp.*). In the study, the authors generated a ddRADseq data that is publicly available on NCBI. (Dufresnes et al. 2019). 
 
-Compared to the work in Dufresnes et al. 2019, my approach differs in that I will use ipyrad instead of STACKS for data processing, and I will perform maximum likelihood analyses using IQ-TREE in addition to the Bayesian analyses–I am curious to see how the results compare between these two phylogentic analysis methods. 
+I will replicate a part of the analyses that the authors performed, which involve processing the raw sequence data, and then performing phylogenetic analyses and constructing trees. The goal of my project is to investigate the phylogenetic relationship between several species within the *Pelobates* genus
+
+Compared to the work in Dufresnes et al. 2019, my approach differs in that I will use ipyrad instead of STACKS for data processing, and I will perform maximum likelihood analyses using IQ-TREE in addition to the Bayesian analyses the authors performed–I am curious to see how the results compare between these two phylogentic analysis methods. 
 
 This project will enable me to develop an analysis pipeline to use for the future ddRADseq data that I will be generating from wood frog samples.
 
