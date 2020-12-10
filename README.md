@@ -58,6 +58,9 @@ I used IQ-TREE v1.6.12 to generate maximum likelihood trees and explore model se
 
 
 ### 4.	Phylogenetic analysis: BEAST
+I used BEUTi v2.6.3 and the module starBEAST to create the NEXUS output file from ipyrad into a BEAST XML input file. There were errors when I initially tried opening the NEXUS file in BEAUTi – upon inspection of the file in Atom, I tried removing the character blocks at the bottom of the file, and that resolved the issue. I manually added the species name under “Taxon sets”, and selected the GTR substitution model and the option “empirical” for frequencies. I used a log-normal relaxed molecular clock with a normal prior, birth-death tree model. I set the chain length to 10 million, and sampled 5,000 trees. All other parameters were kept at default settings. I opened the XML file in BEAST v2.6.3 to run the analysis. I used Tracer v1.7.1 to inspect the output of BEAST.
+
+To explore the plausible trees that BEAST produced and build a maximum-clade credibility tree (i.e., the one that best represents the posterior distribution), I used the program TreeAnnotator v2.6.3 using default parameters. I discarded the first 20% of trees as burnin.
 
 
 ## Results
@@ -65,10 +68,15 @@ I used IQ-TREE v1.6.12 to generate maximum likelihood trees and explore model se
 IQ-TREE selected the TVM+F+G4 as the best-fit model, with a log likelihood of -8422347.559685886.
 
 <p align="center">
-  <img src="https://github.com/YaraAlshw/finalproject/blob/master/toaddata_outfiles/iqtree_figtree_withlabels.png" width="1000" title="hover text">
+  <img src="https://github.com/YaraAlshw/finalproject/blob/master/toaddata_outfiles/iqtree_figtree_withspp_names.png" width="1000" title="hover text">
 </p>
-
 Figure 1. Maximum likelihood tree generated using IQ-TREE and visualized using FigTree. Bootstrap values for each edge are on the child node of the edge.
+
+
+<p align="center">
+  <img src="https://github.com/YaraAlshw/finalproject/blob/master/toaddata_outfiles/BEAST_species.tree_FigTree.png" width="1000" title="hover text">
+</p>
+Figure 2. Maximum-clade credibility tree generated using TreeAnnotator and visualized using FigTree. Bayesian posterior probabilities are shown on the branches.
 
 
 ## Discussion
