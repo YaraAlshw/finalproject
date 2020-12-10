@@ -16,7 +16,7 @@ This project will enable me to develop an analysis pipeline to use for the futur
 ### 1.	Data acquisition and cleaning
 The sequence data is publicly available on NCBI as raw individual ddRAD sequences under BioProject PRJNA542138 with accessions SAMN11612144–SAMN11612336. There was a total of 193 samples encompassing six *Pelobates* species and/or subspecies: *Pelobates balcanicus*,  *Pelobates cultripes*, *Pelobates fuscus*, *Pelobates fuscus vespertinus*, *Pelobates syriacus*, *Pelobates varaldii*. The 193 samples also contained two outgroups: *Scaphiopus couchii*, and *Spea bombifrons*.
 
-Resources online recommended the use of the SRA toolkit to download a large dataset in fasta or fastq.gz format directly onto a cluster. However I had difficulty installing the SRA toolkit so I opted for manually downloading each read as a .fastq.gz file first onto my computer and then upload them to the cluster. Because each file took a long time to manually download and upload, and took up a large amount of space (~500MB) on my computer, I decided to only use a subset of the data. I initially selected 66 samples [(Supplementary table 1)](https://github.com/YaraAlshw/finalproject/blob/master/toaddata_outfiles/Supplementary_table1.txt), but due to computation time limits, I had to further decrease the number of samples and ended up using only 13 samples that included 2 samples from each species and/or subspecies of *Pelobates*, and 1 outgroup sample (Table 1). See “ddRAD data processing” section for an in-depth explanation of why I further reduced the dataset.
+Resources online recommended the use of the SRA toolkit to download a large dataset in fasta or fastq.gz format directly onto a cluster. However I had difficulty installing the SRA toolkit so I opted for manually downloading each read as a .fastq.gz file first onto my computer and then upload them to the cluster. Because each file took a long time to manually download and upload, and took up a large amount of space (~500MB) on my computer, I decided to only use a subset of the data. I initially selected 66 samples [(Supplementary table 1)](https://github.com/YaraAlshw/finalproject/blob/master/Supplementary_table1.txt), but due to computation time limits, I had to further decrease the number of samples and ended up using only 13 samples that included 2 samples from each species and/or subspecies of *Pelobates*, and 1 outgroup sample (Table 1). See “ddRAD data processing” section for an in-depth explanation of why I further reduced the dataset.
 
 Table 1. List of the 13 samples used in this project.
 Run	| BioSample	| Organism
@@ -68,14 +68,14 @@ Both the maximum likelihood tree geenrated using IQ-TREE (Figure 1), and the max
 The two trees also supported a split between the lineage of the two sister taxa, *P. cultripes* & *P. varaldii*, and the two other groups of sister taxa: *P. fuscus*, *P.f. vespertinus*, *P. syriacus*, and *P. balcanicus*
 
 <p align="center">
-  <img src="https://github.com/YaraAlshw/finalproject/blob/master/toaddata_outfiles/iqtree_figtree_withspp_names.png" width="1000" title="hover text">
+  <img src="https://github.com/YaraAlshw/finalproject/blob/master/IQ_TREE/iqtree_figtree_withspp_names.png">
 </p>
 Figure 1. Maximum likelihood tree generated using IQ-TREE and visualized using FigTree. Bootstrap values for each edge are on the child node of the edge.
 
 
 
 <p align="center">
-  <img src="https://github.com/YaraAlshw/finalproject/blob/master/toaddata_outfiles/BEAST_species.tree_FigTree4.png" width="1000" title="hover text">
+  <img src="https://github.com/YaraAlshw/finalproject/blob/master/BEAST/BEAST_species.tree_FigTree4.png>
 </p>
 Figure 2. Maximum-clade credibility tree generated using TreeAnnotator and visualized using FigTree. Bayesian posterior probabilities are shown on the edges. Note that *Pelobates cultripes* is duplicated because of an error in labeling the taxa using starBEAST – these two nodes can be collapsed into one.
 
