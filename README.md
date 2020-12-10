@@ -20,7 +20,7 @@ This project will enable me to develop an analysis pipeline to use for the futur
 ### 1.	Data acquisition and cleaning
 The sequence data is publicly available on NCBI as raw individual ddRAD sequences under BioProject PRJNA542138 with accessions SAMN11612144–SAMN11612336. There was a total of 193 samples encompassing six Pelobates species and/or subspecies: Pelobates balcanicus,  Pelobates cultripes, Pelobates fuscus, Pelobates fuscus vespertinus, Pelobates syriacus, Pelobates varaldii. The 193 samples also contained two outgroups: Scaphiopus couchii, and Spea bombifrons.
 
-Resources online recommended the use of the SRA toolkit to download a large dataset in FASTA or FASTQ.gz format directly onto a cluster. However I had difficulty installing the SRA toolkit so I opted for manually downloading each read as a .fastq.gz file first onto my computer, then upload them to the cluster. Because each file took a long time to manually download and upload, and took up a large amount of space (~500MB) on my computer, I decided to only use a subset of the data. I initially selected 66 samples (Supplementary table 1), but due to computation time limits, I had to further decrease the number of samples and ended up using 13 samples only (including 1 outgroup sample) (Table 2.). See methods section for in-depth explanation of why I further reduced the dataset.
+Resources online recommended the use of the SRA toolkit to download a large dataset in FASTA or FASTQ.gz format directly onto a cluster. However I had difficulty installing the SRA toolkit so I opted for manually downloading each read as a .fastq.gz file first onto my computer, then upload them to the cluster. Because each file took a long time to manually download and upload, and took up a large amount of space (~500MB) on my computer, I decided to only use a subset of the data. I initially selected 66 samples (Supplementary table 1), but due to computation time limits, I had to further decrease the number of samples and ended up using 13 samples only (including 1 outgroup sample) (Table 2.). See “ddRAD data processing” section for in-depth explanation of why I further reduced the dataset.
 
 Run	| BioSample	| Organism
 ----|-----------|---------
@@ -53,15 +53,23 @@ All other parameters were kept at default settings. The parameters file is avail
 
 Step 3 of ipyrad is computationally intensive, and for initial runs using 66 fasta files, the batch job failed because it ran out of time, despite using 16 CPUs. Because the class partition on Grace only allows for a maximum of 24 hrs per batch job, I decided to move my analyses to my personal account on the Farnam cluster and significantly decrease the number of samples. I redownloaded and reuploaded the 13 samples I described previously, and managed to have step 3 and the remaining steps of ipyrad run smoothly by increasing the number of CPUs and allocating more time.
 
-### 3.	Phylogenetic analysis: IQ-TREE
-I used IQ-TREE v1.6.12
+### 3. Phylogenetic analysis: IQ-TREE
+I used IQ-TREE v1.6.12 to generate maximum likelihood trees and explore model selection. Using the toadata.phy output from ipyrad which contains the multiple sequence alignment, I ran 1000 bootstraps, and explored the toaddata.phy.iqtree output file in Atom v1.50.0. Because IQ-TREE produces unrooted trees, I exported the toaddata.phy.tree outout to FigTree v1.4.4 and selected the outgroup branch corresponding to *Scaphiopus couchii* to reroot the tree.
+
 
 ### 4.	Phylogenetic analysis: BEAST
 
 
 ## Results
 
-The tree in Figure 1...
+IQ-TREE selected the TVM+F+G4 as the best-fit model, with a log likelihood of -8422347.559685886.
+
+<p align="center">
+  <img src="https://github.com/YaraAlshw/finalproject/blob/master/toaddata_outfiles/iqtree_figtree_withlabels.png" width="1000" title="hover text">
+</p>
+
+Figure 1. Maximum likelihood tree generated using IQ-TREE and visualized using FigTree. Bootstrap values for each edge are on the child node of the edge.
+
 
 ## Discussion
 
