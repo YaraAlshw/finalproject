@@ -18,11 +18,25 @@ This project will enable me to develop an analysis pipeline to use for the futur
 ## Methods
 
 ### 1.	Data acquisition and cleaning
-The sequence data is publicly available on NCBI as raw individual ddRAD sequences under BioProject PRJNA542138 with accessions SAMN11612144–SAMN11612336. There was a total of 193 samples encompassing six Pelobates species and/or subspecies: Pelobates balcanicus,  Pelobates cultripes, Pelobates fuscus, Pelobates fuscus vespertinus, Pelobates syriacus, Pelobates varaldii. The 193 samples also contained two outgroups: Scaphiopus couchii, and Spea bombifrons (table 1).
-
-Table 1. List of the species used in the study.
+The sequence data is publicly available on NCBI as raw individual ddRAD sequences under BioProject PRJNA542138 with accessions SAMN11612144–SAMN11612336. There was a total of 193 samples encompassing six Pelobates species and/or subspecies: Pelobates balcanicus,  Pelobates cultripes, Pelobates fuscus, Pelobates fuscus vespertinus, Pelobates syriacus, Pelobates varaldii. The 193 samples also contained two outgroups: Scaphiopus couchii, and Spea bombifrons.
 
 Resources online recommended the use of the SRA toolkit to download a large dataset in FASTA or FASTQ.gz format directly onto a cluster. However I had difficulty installing the SRA toolkit so I opted for manually downloading each read as a .fastq.gz file first onto my computer, then upload them to the cluster. Because each file took a long time to manually download and upload, and took up a large amount of space (~500MB) on my computer, I decided to only use a subset of the data. I initially selected 66 samples (Supplementary table 1), but due to computation time limits, I had to further decrease the number of samples and ended up using 13 samples only (including 1 outgroup sample) (Table 2.). See methods section for in-depth explanation of why I further reduced the dataset.
+
+Run	| BioSample	| Organism
+----|-----------|---------
+SRR9036277| SAMN11612210|	*Pelobates cultripes*
+SRR9036288|	SAMN11612224|	*Pelobates varaldii*
+SRR9036297| SAMN11612222|	*Pelobates varaldii*
+SRR9036138|	SAMN11612272|	*Pelobates fuscus vespertinus*
+SRR9036233|	SAMN11612334|	*Scaphiopus couchii*
+SRR9036111|	SAMN11612194|	*Pelobates balcanicus*
+SRR9036276|	SAMN11612211|	*Pelobates cultripes*
+SRR9036112|	SAMN11612240|	*Pelobates fuscus*
+SRR9036114|	SAMN11612189|	*Pelobates balcanicus*
+SRR9036113|	SAMN11612238|	*Pelobates fuscus*
+SRR9036139|	SAMN11612269|	*Pelobates fuscus vespertinus*
+SRR9036128|	SAMN11612159|	*Pelobates syriacus*
+SRR9036127|	SAMN11612158|	*Pelobates syriacus*
 
 Table 2. List of the 13 samples used in this project.
 
