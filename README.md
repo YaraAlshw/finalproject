@@ -75,7 +75,7 @@ Figure 1. Maximum likelihood tree generated using IQ-TREE and visualized using F
 
 
 <p align="center">
-  <img src="https://github.com/YaraAlshw/finalproject/blob/master/BEAST/BEAST_species.tree_FigTree4.png>
+  <img src="https://github.com/YaraAlshw/finalproject/blob/master/BEAST/BEAST_species.tree_FigTree4.png">
 </p>
 Figure 2. Maximum-clade credibility tree generated using TreeAnnotator and visualized using FigTree. Bayesian posterior probabilities are shown on the edges. Note that *Pelobates cultripes* is duplicated because of an error in labeling the taxa using starBEAST – these two nodes can be collapsed into one.
 
