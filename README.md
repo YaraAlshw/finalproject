@@ -45,7 +45,7 @@ Instead of using STACKS as proposed in my [minimum viable analysis](https://gith
 * **trim_reads** to “0, 90, 0, 0”
 * **output_formats**  to “*”
 
-All other parameters were kept at default settings. The parameters file is available [here](https://github.com/YaraAlshw/finalproject/blob/master/params-toaddata.txt). I performed an additional data cleaning step and removed all empty lines from the .fastq files using the command `<grep -v '^[[:space:]]*$' file_input.fastq  > file_output.fastq>`. This step was necessary to ensure ipyrad reads the input files correctly.
+All other parameters were kept at default settings. The parameters file is available [here](https://github.com/YaraAlshw/finalproject/blob/master/ipyrad/params-toaddata.txt). I performed an additional data cleaning step and removed all empty lines from the .fastq files using the command `<grep -v '^[[:space:]]*$' file_input.fastq  > file_output.fastq>`. This step was necessary to ensure ipyrad reads the input files correctly.
 
 Step 3 of ipyrad is computationally intensive, and for initial runs using 66 fasta files, the batch job failed because it ran out of time, despite using 16 CPUs. Because the class partition on Grace only allows for a maximum of 24 hrs per batch job, I decided to move my analyses to my personal account on the Farnam cluster and to significantly decrease the number of samples. I redownloaded and reuploaded the 13 samples I described previously, and managed to have step 3 and the remaining steps of ipyrad run smoothly by increasing the number of CPUs and allocating more time to the job.
 
