@@ -1,6 +1,6 @@
 
 Supplementary table 1. List of the 66 samples initially used for the analysis.
-Run	BioSample	Organism
+Run	        BioSample	    Organism
 SRR9036234	SAMN11612335	Spea bombifrons
 SRR9036258	SAMN11612333	Scaphiopus couchii
 SRR9036235	SAMN11612336	Scaphiopus couchii
