@@ -1,0 +1,69 @@
+
+Supplementary table 1. List of the 66 samples initially used for the analysis.
+Run	BioSample	Organism
+SRR9036234	SAMN11612335	Spea bombifrons
+SRR9036258	SAMN11612333	Scaphiopus couchii
+SRR9036235	SAMN11612336	Scaphiopus couchii
+SRR9036233	SAMN11612334	Scaphiopus couchii
+SRR9036302	SAMN11612219	Pelobates varaldii
+SRR9036297	SAMN11612222	Pelobates varaldii
+SRR9036288	SAMN11612224	Pelobates varaldii
+SRR9036300	SAMN11612221	Pelobates cultripes
+SRR9036299	SAMN11612220	Pelobates cultripes
+SRR9036298	SAMN11612223	Pelobates cultripes
+SRR9036277	SAMN11612210	Pelobates cultripes
+SRR9036276	SAMN11612211	Pelobates cultripes
+SRR9036164	SAMN11612302	Pelobates fuscus vespertinus
+SRR9036163	SAMN11612195	Pelobates balcanicus
+SRR9036162	SAMN11612198	Pelobates balcanicus
+SRR9036161	SAMN11612215	Pelobates fuscus
+SRR9036160	SAMN11612214	Pelobates fuscus
+SRR9036159	SAMN11612172	Pelobates balcanicus
+SRR9036158	SAMN11612173	Pelobates balcanicus
+SRR9036157	SAMN11612170	Pelobates balcanicus
+SRR9036156	SAMN11612171	Pelobates balcanicus
+SRR9036155	SAMN11612168	Pelobates syriacus
+SRR9036154	SAMN11612169	Pelobates balcanicus
+SRR9036153	SAMN11612166	Pelobates syriacus
+SRR9036152	SAMN11612167	Pelobates syriacus
+SRR9036151	SAMN11612164	Pelobates syriacus
+SRR9036150	SAMN11612165	Pelobates syriacus
+SRR9036149	SAMN11612186	Pelobates balcanicus
+SRR9036148	SAMN11612241	Pelobates fuscus
+SRR9036147	SAMN11612153	Pelobates syriacus
+SRR9036146	SAMN11612266	Pelobates fuscus vespertinus
+SRR9036145	SAMN11612267	Pelobates fuscus vespertinus
+SRR9036144	SAMN11612264	Pelobates fuscus vespertinus
+SRR9036143	SAMN11612265	Pelobates fuscus vespertinus
+SRR9036142	SAMN11612270	Pelobates fuscus vespertinus
+SRR9036141	SAMN11612271	Pelobates fuscus vespertinus
+SRR9036140	SAMN11612268	Pelobates fuscus vespertinus
+SRR9036139	SAMN11612269	Pelobates fuscus vespertinus
+SRR9036138	SAMN11612272	Pelobates fuscus vespertinus
+SRR9036137	SAMN11612273	Pelobates fuscus
+SRR9036136	SAMN11612163	Pelobates syriacus
+SRR9036135	SAMN11612162	Pelobates syriacus
+SRR9036134	SAMN11612157	Pelobates syriacus
+SRR9036133	SAMN11612156	Pelobates syriacus
+SRR9036132	SAMN11612155	Pelobates syriacus
+SRR9036131	SAMN11612154	Pelobates syriacus
+SRR9036130	SAMN11612161	Pelobates syriacus
+SRR9036129	SAMN11612160	Pelobates syriacus
+SRR9036128	SAMN11612159	Pelobates syriacus
+SRR9036127	SAMN11612158	Pelobates syriacus
+SRR9036126	SAMN11612188	Pelobates balcanicus
+SRR9036125	SAMN11612239	Pelobates fuscus
+SRR9036124	SAMN11612275	Pelobates fuscus
+SRR9036123	SAMN11612274	Pelobates fuscus
+SRR9036122	SAMN11612277	Pelobates fuscus
+SRR9036121	SAMN11612276	Pelobates fuscus
+SRR9036120	SAMN11612279	Pelobates fuscus
+SRR9036119	SAMN11612278	Pelobates fuscus
+SRR9036118	SAMN11612281	Pelobates fuscus
+SRR9036117	SAMN11612280	Pelobates fuscus
+SRR9036116	SAMN11612283	Pelobates fuscus
+SRR9036115	SAMN11612282	Pelobates fuscus
+SRR9036114	SAMN11612189	Pelobates balcanicus
+SRR9036113	SAMN11612238	Pelobates fuscus
+SRR9036112	SAMN11612240	Pelobates fuscus
+SRR9036111	SAMN11612194	Pelobates balcanicus
