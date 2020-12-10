@@ -101,7 +101,7 @@ approximation. Mol Biol Evol, 35:518–522, https://doi.org/10.1093/molbev/msx28
 
 Dufresnes C, Strachinis I, Suriadna N, Mykytynets G, Cogălniceanu D, et al. 2019. Phylogeography of a cryptic speciation continuum in Eurasian spadefoot toads ( Pelobates ). Mol Ecol. 28(13):3257–70. https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15133
 
-Eaton DAR, Overcast I. ipyrad: Interactive assembly and analysis of RADseq datasets. Bioinformatics. 2020. 36(8):2592-2594. doi:10.1093/bioinformatics/btz966
+Eaton DAR, Overcast I. ipyrad: Interactive assembly and analysis of RADseq datasets. Bioinformatics. 2020. 36(8):2592-2594. https://doi.org/10.1093/bioinformatics/btz966
 
 Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh. 2015. IQ-TREE: A fast and effective stochastic algorithm for estimating maximum likelihood phylogenies. Mol Biol Evol, 32:268-274. https://doi.org/10.1093/molbev/msu300
 
