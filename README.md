@@ -1,4 +1,4 @@
-# Phylogeography of the Eurasian Spadefoot Toads (*Pelobates spp.*)
+# Phylogeography of the Eurasian Spadefoot Toads (*Pelobates sp.*)
 
 ## Introduction and Goals
 
