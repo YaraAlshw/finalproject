@@ -38,7 +38,7 @@ SRR9036139|	SAMN11612269|	*Pelobates fuscus vespertinus*
 SRR9036128|	SAMN11612159|	*Pelobates syriacus*
 SRR9036127|	SAMN11612158|	*Pelobates syriacus*
 
-Table 2. List of the 13 samples used in this project.
+Table 1. List of the 13 samples used in this project.
 
 ### 2.	ddRAD data processing
 I used ipyrad v0.9.62 (Eaton and Overcast, 2020) to process and assemble the raw ddRAD sequences. I closely followed the online workshop material from [RADcamp](https://radcamp.github.io). Using the default parameters file, I msde the following modifications:
